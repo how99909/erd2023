@@ -5,17 +5,18 @@
 <body>
 <h1>sumsumsumsumsumsumsumsumsum</h1>
 <script>
-num = prompt("숫자 입력")
-num = Number(num)
 sum = 0
+data=prompt("<del>입력 ㅇㅇ</del>")
+data = data.split(' ')
+data = data.map(Number)
 start = new Date()
-for ( i = 1; i <= num; i++ )
+for ( i = 0; i < data.length; i++ )
 {
-	sum += i
-	document.write("<br>i "+i+", sum "+sum)
+	sum += data[i]
+	document.write("<br>i "+i+", data "+data[i]+", sum "+sum)
 }
 end = new Date()
-document.write('<br>'+(end-start)+"ms")
+document.write('<br>'+(end-start)+"ms"+'<br>')
 for (i=0;i<10;i++)
 {
 	document.write("<br>김선규 마시쪙 ")
