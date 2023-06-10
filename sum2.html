@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+<script>
+function sum(a, b){
+	c = a + b
+	return c
+}
+function func(){
+	var res = 1
+	while(res){
+		d1 = parseInt(prompt("숫자 1"))
+		d2 = parseInt(prompt("숫자 2"))
+		r = sum(d1, d2)
+		console.log(r)
+		alert(r)
+		res = confirm("계속?")
+	}
+}
+func()
+</script>
+<body>
+다시? 
+<button onclick = "func()">
+여기
+</button>
+</body>
+</html>
